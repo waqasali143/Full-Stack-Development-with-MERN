@@ -1,0 +1,120 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 32px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #243047;
+    background: linear-gradient(135deg, #e8f2ff, #f7f9fc);
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #dbe5f0;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(36, 48, 71, 0.10);
+}
+
+.avatar {
+    display: grid;
+    place-items: center;
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    color: #ffffff;
+    background: #2563eb;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+h1 {
+    margin: 0;
+    color: #173b74;
+    text-align: center;
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
+}
+
+.subtitle {
+    margin: 4px 0 28px;
+    color: #64748b;
+    text-align: center;
+}
+
+section {
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid #e5eaf1;
+}
+
+h2 {
+    margin: 0 0 8px;
+    color: #2563eb;
+    font-size: 1.2rem;
+}
+
+p {
+    margin: 8px 0;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills li {
+    padding: 7px 12px;
+    color: #17408b;
+    background: #eaf2ff;
+    border: 1px solid #c9dcff;
+    border-radius: 999px;
+    font-size: 0.95rem;
+}
+
+.email-link {
+    display: inline-block;
+    color: #1d4ed8;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.email-link:hover {
+    color: #1e40af;
+}
+
+footer {
+    margin: 22px auto 0;
+    color: #64748b;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 480px) {
+    body {
+        padding: 18px 10px;
+    }
+
+    .profile-card {
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+
+    section {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+}
